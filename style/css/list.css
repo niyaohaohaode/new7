@@ -1,0 +1,352 @@
+/* 头部样式开始 */
+header{
+	background: #fff;
+	/* position: absolute; */
+}
+header div>ul{
+	margin-top: 35px;
+}
+header div>ul>li{
+	position: relative;
+	height: 56px;
+	line-height: 56px;
+	/* background: url(../img/navLine.gif) no-repeat right center; */
+}
+header div>ul>li:hover{
+	background: rgba(4,45,61,.7);
+	
+}
+header div>ul>li:hover a{
+	color: white;
+}
+/* header div>ul>li:last-of-type{
+	background: none;
+} */
+header div>ul>li>a{
+	display: block;
+	padding: 0 15px;
+	font-size: 16px;
+	color: #494a4d;
+}
+header #headDropDown{
+	display: none;
+	position: absolute;
+	/* left: 20px; */
+	top: 56px;
+	background: rgba(4,45,61,.7);
+}
+header #headDropDown li{
+	width: 110px;
+	height: 50px;
+	font-size: 13px
+	background: #042d3d;
+}
+header #headDropDown li:hover{
+	
+	background: #5e80a1;
+}
+header #headDropDown li a{
+	display: block;
+	line-height: 50px;
+	color: #fff;
+}
+header span{
+	display: none;
+	top: 5%;
+	right: 7%;
+	width: 32px;
+	height: 32px;
+	background: url(../img/navBtn.png) no-repeat;
+}
+@media screen and (min-width:320px) and (max-width:768px){
+	header{
+		height: 100px;
+	}
+	header span{
+		display: block;
+	}
+	header>div{
+		width: 100%!important;
+	}
+	
+	header>div h1{
+		width: 80%;
+		margin-top: 20px;
+	}
+	header>div h1 a{
+		display: block;
+		width: 100%;
+	}
+	header>div h1 a img{
+		width: 100%;
+	}
+	header>div ul{
+		display: none;
+		margin-top: 0;
+		background: white;
+		position: absolute;
+		left: 0%;
+		top: 12%;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	header>div ul li{
+		float: none!important;
+		display: block!important;
+		margin: 0 auto;
+		width: 50%;
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+		border-bottom: 1px dashed #042D3D;
+	}
+	header>div ul li ul{
+		display: none;
+	}
+}
+/* 头部样式结束 */
+/* banner样式开始 */
+.banner{
+	height: 645px;
+	background: url(../img/listBanner1.gif) no-repeat;
+	background-size: 100% 100%;
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+	.banner{
+		height: 230px;
+		background: url(../img/mobileBanner2.jpg) no-repeat;
+		background-size: 100% 100%;
+	}
+	.banner>div{
+		width: 100%;
+		height: 230px;
+	}
+}
+/* banner样式结束 */
+.tit{
+	height: 58px;
+	line-height: 58px;
+	background: url(../img/location.gif) no-repeat left center;
+}
+.tit:after {
+    content: '';
+    position: absolute;
+	/* left: 10px; */
+    top: 50%;
+    background: #81969e;
+    width: 900px;
+    height: 1px;
+	margin-left: 10px;
+}
+@media screen and (min-width:320px) and (max-width:768px){
+	.tit{
+		width: 100%;
+		margin-top: 0;
+		padding-left: 30px;
+		background: url(../img/location.gif) no-repeat 15px center;
+		/* background-size: 100% 1px; */
+	}
+	.tit:after{
+		display: none;
+	}
+}
+/* 尾部样式开始 */
+footer{
+	height: 40px;
+	line-height: 40px;
+	background: #042d3d;
+}
+@media screen and (min-width:770px) {
+	footer>div{
+		display: flex;
+		justify-content: center;
+	}
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+	footer{
+		margin-top: 0!important;
+		height: auto;
+		padding: 20px 0;
+	}
+	footer>div{
+		width: 100%!important;
+	}
+	footer>div h2{
+		display: block!important;
+		margin-right: 0!important;
+		text-align: center;
+		float: none!important;
+	}
+	footer>div h3{
+		display: block!important;
+		float: none!important;
+		text-align: center;
+		margin-right: 0!important;
+	}
+}
+/* 尾部样式结束 */
+
+
+
+/* list1开始 */
+.list1{
+	padding: 0 12px;
+}
+.list1 aside{
+	width: 162px;
+	margin-right: 48px;
+}
+.list1 aside p{
+	height: 39px;
+	line-height: 39px;
+	cursor: pointer;
+	border-bottom: 1px solid #f0f0f0;
+	transition: all 0.3s ease-out 0s;
+}
+
+.list1 aside a{
+	padding-left: 18px;
+	color: #787777;
+	
+}
+.list1 aside p:hover{
+	padding-left: 10px;
+}
+.list1 aside p:hover a{
+	/* margin-left: 20px; */
+	/* padding-left: 10px; */
+	border-left: 3px solid #042d3d;
+}
+.list1 aside p:first-of-type a{
+	border-left: 3px solid #042d3d;
+}
+.list1>div ul{
+	width: 866px;
+}
+.list1>div ul li{
+	/* padding-bottom: 24px;
+	padding-top: 15px; */
+	padding: 15px 0 24px;
+	border-bottom: 2px solid #f6f6f6;
+}
+.list1>div ul li a{
+	display: block;
+	overflow: hidden;
+}
+.list1>div ul li .listL{
+	width: 777px;
+	padding-right: 35px;
+	transition: all 0.3s ease-out 0s;
+}
+.list1>div ul li:hover .listL{
+	padding-left: 20px;
+	/* transform: all .5s; */
+}
+.list1>div ul li .listL h2{
+	color: #767676;
+	height: 48px;
+	line-height: 48px;
+}
+.list1>div ul li .listL p{
+	color: #9b9d9f;
+	/* height: 20px; */
+	line-height: 20px;
+	width: 720px;
+}
+.list1>div ul li .listR h4{
+	height: 17px;
+	line-height: 17px;
+	color: #9c9593;
+}
+.list1>div ul li .listR h3{
+	height: 23px;
+	line-height: 23px;
+	color: #9c9593;
+}
+.list1>div .jumpBtn{
+	width: 866px;
+	height: 130px;
+	padding-top: 70px;
+}
+.list1>div .jumpBtn a{
+	display: block;
+	height: 28px;
+	line-height: 28px;
+}
+.list1>div .jumpBtn .circle{
+	margin-right: 10px;
+	width: 28px;
+	border-radius: 50%;
+	text-align: center;
+	
+}
+.list1>div .jumpBtn .circle:hover{
+	transition: all .5s;
+	background: #042D3D;
+	color: #FFFFFF; 	
+}
+.circleOn{
+	background: #042D3D;
+	color: #FFFFFF;
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+	.list1>div{
+		width: 100%;
+	}
+	.list1 aside{
+		width: 100%;
+		margin-right: 0;
+	}
+	.list1 aside p{
+		width: 25%;
+		float: left;
+		text-align: center;
+	}
+	.list1 aside p:first-of-type{
+		margin-top: 0;
+	}
+	.list1 aside p a{
+		padding-left: 0;
+	}
+	.list1 aside p:first-of-type a {
+	    border-left:0;
+	}
+	.list1>div ul{
+		width: 100%;
+	}
+	.list1 .listL{
+		width: 95%!important;
+		padding-right: 0!important;
+	}
+	.list1 .listL h2{
+		line-height: 26px!important;
+		height: auto!important;
+	}
+	.list1 .listL p{
+		width: 100%!important;
+		margin-top: 10px;
+		text-indent: 2em;
+		font-size: 14px;
+	}
+	.list1 .listR{
+		float: right;
+		margin-right: 5%;
+	}
+	.list1>div ul li .listR h4{
+		margin-top: 0!important;
+	}
+	.list1>div .jumpBtn{
+		width: 100%;
+		padding-top: 50px;
+	}
+	.mobileNone{
+		display: none!important;
+	}
+}
+/* list1结束 */
+
+
+
+/* list2开始 */
+
+/* list2结束 */
